@@ -81,7 +81,8 @@
 			window.addEventListener("message", receiveMessage, false);
 			  
 			function onDeviceReady()                
-			{			
+			{
+				document.getElementById('blanker').style.display = 'block';			
 				alert('hi2');
 				// Blanker on change				
 				document.addEventListener("online", doWhenOnline, false);
