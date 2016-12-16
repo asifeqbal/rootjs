@@ -60,19 +60,13 @@
 				
 				
 			alert('h1');
-			
-			function onDeviceReady () {
-			 alert("Calling onDeviceReady()");
-			}
 
-			setTimeout(function () {
-					document.addEventListener('deviceready', onDeviceReady, false);
-			}, 9000);
+			
 		
-		/*	function loaded(){
+			function loaded(){
 				document.getElementById('blanker').style.display = 'none';	
 				alert('h2');
-			}*/
+			}
 			
 		/*	var receiveMessage = function receiveMessage(e){
 				switch (e.data) {
@@ -86,7 +80,7 @@
 			};		*/	
 			
 			  
-		/*	function onDeviceReady()                    
+			function onDeviceReady()                    
 			{  
 					alert('device ready');
 						
@@ -105,7 +99,7 @@
 					doWhenOnline();
 				} 
 				
-			}*/
+			}
 			
 			function doWhenOnline(){
 				document.getElementById('offline-screen').style.display = 'none';
