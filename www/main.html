@@ -61,12 +61,11 @@
 		
 		
 			function loaded(){
-				document.getElementById('blanker').style.display = 'none';
-				
+				document.getElementById('blanker').style.display = 'none';	
 				
 			}
 			
-			var receiveMessage = function receiveMessage(e){
+		/*	var receiveMessage = function receiveMessage(e){
 				switch (e.data) {
 						case 'setBlanker':
 						document.getElementById('blanker').style.display = 'block';
@@ -75,15 +74,15 @@
 						document.getElementById('blanker').style.display = 'none'; 
 						break;
 					}
-			};			
-			window.addEventListener("message", receiveMessage, false);
+			};		*/	
+			
 			  
 			function onDeviceReady()                    
 			{  
-					
+					alert('device ready');
 						
 				document.getElementById('blanker').style.display = 'block';
-				//alert('hi');				
+				alert('hi');				
 				
 				// Blanker on change				
 				document.addEventListener("online", doWhenOnline, false);
