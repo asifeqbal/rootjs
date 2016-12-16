@@ -38,7 +38,7 @@
 	<div id="offline-screen"></div>	
 	<div class="social-button-facebook button_inline" onclick="browse();"></div>	
 		
-	<iframe src="http://www.floow2.com/floow2-nl-mobiel.html"  name="container-frame" id="container-frame" onload="loaded();" seamless="seamless" width="100%" height="100%" style="overflow-x:hidden; border:none;"></iframe>
+	<iframe src="http://projects.vrisini.com/speeltuin"  name="container-frame" id="container-frame" onload="loaded();" seamless="seamless" width="100%" height="100%" style="overflow-x:hidden; border:none;"></iframe>
 
 
         <script type="text/javascript" src="cordova.js"></script>
@@ -80,38 +80,10 @@
 			  
 			function onDeviceReady()                    
 			{  
-				navigator.globalization.getPreferredLanguage(
-					function (language) {
-					var lang = language.value;
-					var res = lang.split("-");
-						if(res[0] == 'nl'){
-							//document.getElementById('container-frame').src = 'http://www.floow2.com/floow2-nl-mobiel.html';
-						}else{
-							document.getElementById('container-frame').src = 'http://www.floow2.com/fl2-en-mobile.html';
-						}
-					},
-					function () {alert('Error getting language\n');}
-				  );
-				
+					
 						
 				document.getElementById('blanker').style.display = 'block';
-				//alert('hi');
-				var push = PushNotification.init({ "android": {"senderID": "548775200419"},
-				"ios": {"alert": "true", "badge": "true", "sound": "true"}, "windows": {} } );
-				
-				push.on('registration', function(data) {
-					//alert(data.registrationId);
-					if(flag){
-					//document.getElementById('container-frame').src = 'http://www.floow2.com/fl2-en-mobile.html/index.php?id=1&devType=2&devId='+data.registrationId;
-					document.getElementById('blanker').style.display = 'none';
-					}
-					flag=false;
-					
-				});  
-				  
-				push.on('notification', function(data) {
-					console.log(data.message);				
-				});
+				//alert('hi');				
 				
 				// Blanker on change				
 				document.addEventListener("online", doWhenOnline, false);
