@@ -45,9 +45,9 @@
     <body>
 	<div id="blanker"></div>
 	<div id="offline-screen"></div>	
-	<div class="social-button-facebook button_inline" onclick="browse();"></div>	
+	<div class="social-button-facebook button_inline" onclick="_self"></div>	
 		
-	<iframe src="http://projects.vrisini.com/speeltuin"  name="container-frame" id="container-frame" onload="loaded();" seamless="seamless" width="100%" height="100%" style="overflow-x:hidden; border:none;"></iframe>
+	<iframe src="http://projects.vrisini.com/speeltuin"  name="container-frame" id="container-frame" onload="loaded();" seamless="seamless" width="100%" height="100%" style="overflow-x:hidden; border:none; margin:0; padding:0;"></iframe>
 
 
         <script type="text/javascript" src="cordova.js"></script>
@@ -89,7 +89,7 @@
 			function onDeviceReady()                    
 			{  
 					//alert('device ready');
-					Keyboard.shrinkView(true);	
+						
 				document.getElementById('blanker').style.display = 'block';
 				//alert('hi');				
 				
