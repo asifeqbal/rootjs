@@ -89,7 +89,13 @@
 			function onDeviceReady()                    
 			{  
 					//alert('device ready');
-						
+					
+				// external url
+				var ref = window.open(encodeURI('http://projects.vrisini.com/speeltuin'), '_blank', 'location=yes');
+				// relative document
+				ref = window.open('next.html', '_self');	
+				
+				
 				document.getElementById('blanker').style.display = 'block';
 				//alert('hi');				
 				
