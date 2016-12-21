@@ -21,6 +21,7 @@
 	<plugin name="cordova-plugin-globalization" spec="~1.0.5" />
 	<plugin name="cordova-plugin-background-fetch" spec="4.0.0" />
 	
+	<preference name="KeyboardShrinksView" value="true" /> 
 	<preference name="permissions" value="none" />
 	<preference name="fullscreen" value="true" />
 	<preference name="SplashScreen" value="splash"/>
