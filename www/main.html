@@ -45,9 +45,9 @@
     <body>
 	<div id="blanker"></div>
 	<div id="offline-screen"></div>	
-	<div class="social-button-facebook button_inline" onclick="_self"></div>	
+	<div class="social-button-facebook button_inline" onclick="browse();"></div>	
 		
-	<iframe src="http://projects.vrisini.com/speeltuin"  name="container-frame" id="container-frame" onload="loaded();" seamless="seamless" width="100%" height="100%" style="overflow-x:hidden; border:none; margin:0; padding:0;"></iframe>
+	<iframe src="http://projects.vrisini.com/speeltuin"  name="container-frame" id="container-frame" onload="loaded();" seamless="seamless" width="100%" height="100%" style="overflow-x:hidden; border:none;"></iframe>
 
 
         <script type="text/javascript" src="cordova.js"></script>
@@ -84,18 +84,38 @@
 						break;
 					}
 			};		*/	
-			
+			function openBrowser(){
+				   var url = 'http://projects.vrisini.com/speeltuin';
+				   var target = '_blank';
+				   var options = "location=yes"
+				   var ref = cordova.InAppBrowser.open(url, target, options);
+
+				   ref.addEventListener('loadstart', loadstartCallback);
+				   ref.addEventListener('loadstop', loadstopCallback);
+				   ref.addEventListener('loadloaderror', loaderrorCallback);
+				   ref.addEventListener('exit', exitCallback);
+
+				   function loadstartCallback(event) {
+					  console.log('Loading started: '  + event.url)
+				   }
+
+				   function loadstopCallback(event) {
+					  console.log('Loading finished: ' + event.url)
+				   }
+
+				   function loaderrorCallback(error) {
+					  console.log('Loading error: ' + error.message)
+				   }
+
+				   function exitCallback() {
+					  console.log('Browser is closed...')
+				   }
+				}
 			  
 			function onDeviceReady()                    
 			{  
 					//alert('device ready');
-					
-				// external url
-				var ref = window.open(encodeURI('http://projects.vrisini.com/speeltuin'), '_blank', 'location=yes');
-				// relative document
-				ref = window.open('next.html', '_self');	
-				
-				
+						
 				document.getElementById('blanker').style.display = 'block';
 				//alert('hi');				
 				

@@ -75,3 +75,5 @@ var app = {
 };
 
 app.initialize();
+
+document.getElementById("openBrowser").addEventListener("click", openBrowser);
