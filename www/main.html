@@ -107,7 +107,8 @@
 					
 			  
 			function onDeviceReady()                    
-			{  		var lat;			
+			{  		
+			var lat;			
 		/*	navigator.globalization.getPreferredLanguage(
 					function (language) {
 					var lang = language.value;
@@ -121,7 +122,7 @@
 					function () {alert('Error getting language\n');}
 				  );*/
 				navigator.geolocation.getCurrentPosition(	
-				 function (position){
+				 function onSuccess(position){
 						lat = position.coords.latitude;
 						//Longitude var = position.coords.longitude;
 					 }					
