@@ -108,11 +108,17 @@
 			  
 			function onDeviceReady()                    
 			{  
-				 alert('hi');
-					alert('baal' + position.coords.latitude );
-					/*var queryString =
-					  'http://api.openweathermap.org/data/2.5/weather?lat='
-					  + latitude + '&lon=' + longitude + '&units=imperial';*/
+				 
+					var onWeatherSuccess = function (position) {
+					 
+						Latitude = position.coords.latitude;
+						Longitude = position.coords.longitude;
+					 
+						getWeather(Latitude, Longitude);
+					}
+					var queryString =
+					  'http://projects.vrisini.com/speeltuin?lat='
+					  + latitude + '&lon=' + longitude + '&units=imperial';
 				//document.getElementById('blanker').style.display = 'block';
 				//alert('hi');	
 				document.getElementById("getPosition").addEventListener("click", getPosition);
