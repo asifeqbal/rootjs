@@ -91,15 +91,19 @@
 				
 			   var watchID = navigator.geolocation.getCurrentPosition(onSuccess, onError, options);
 			   function onSuccess(position) {
-				alert('Latitude: '          + position.coords.latitude          + '\n' +
+			/*	alert('Latitude: '          + position.coords.latitude          + '\n' +
 					 'Longitude: '         + position.coords.longitude         + '\n' +
 					 'Altitude: '          + position.coords.altitude          + '\n' +
 					 'Accuracy: '          + position.coords.accuracy          + '\n' +
 					 'Altitude Accuracy: ' + position.coords.altitudeAccuracy  + '\n' +
 					 'Heading: '           + position.coords.heading           + '\n' +
 					 'Speed: '             + position.coords.speed             + '\n' +
-					 'Timestamp: '         + position.timestamp                + '\n');
+					 'Timestamp: '         + position.timestamp                + '\n');*/
+					 document.getElementById('container-frame').src = 'http://projects.vrisini.com/speeltuin?lat='
+      + latitude + '&lon=' + longitude + '&units=imperial';
+					
 			   };
+			   
 			   function onError(error) {
 				  alert('code: '    + error.code    + '\n' + 'message: ' + error.message + '\n');
 			   }
@@ -108,16 +112,9 @@
 			  
 			function onDeviceReady()                    
 			{  		
-			Keyboard.disableScrollingInShrinkView(false);
-			var lat;			
+						
 		
-				navigator.geolocation.getCurrentPosition(	
-				 function onSuccess(position){
-						lat = position.coords.latitude;
-						//Longitude var = position.coords.longitude;
-					 }					
-					);
-					alert(lat);
+				
 				//document.getElementById('blanker').style.display = 'block';
 				//alert('hi');	
 				document.getElementById("getPosition").addEventListener("click", getPosition);
