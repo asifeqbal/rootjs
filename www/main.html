@@ -107,7 +107,7 @@
 					
 			  
 			function onDeviceReady()                    
-			{  					
+			{  		var lat;			
 		/*	navigator.globalization.getPreferredLanguage(
 					function (language) {
 					var lang = language.value;
@@ -122,12 +122,11 @@
 				  );*/
 				navigator.geolocation.getCurrentPosition(	
 				 function (position){
-						Latitude var = position.coords.latitude;
-						Longitude var = position.coords.longitude;
-					 }
-						alert(latitude);
-					
-					)
+						lat = position.coords.latitude;
+						//Longitude var = position.coords.longitude;
+					 }					
+					);
+					alert(lat);
 				//document.getElementById('blanker').style.display = 'block';
 				//alert('hi');	
 				document.getElementById("getPosition").addEventListener("click", getPosition);
