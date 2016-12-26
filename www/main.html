@@ -48,7 +48,8 @@
 		
 	<iframe src="http://projects.vrisini.com/speeltuin"  name="container-frame" id="container-frame" onload="loaded();" seamless="seamless" width="100%" height="100%" style="overflow-x:hidden; border:none;"></iframe>
 
-		<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+
+        <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
         <script type="text/javascript" src="js/materialize.min.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
@@ -90,7 +91,7 @@
 				
 			   var watchID = navigator.geolocation.getCurrentPosition(onSuccess, onError, options);
 			   function onSuccess(position) {
-			/*	alert('Latitude: '          + position.coords.latitude          + '\n' +
+				alert('Latitude: '          + position.coords.latitude          + '\n' +
 					 'Longitude: '         + position.coords.longitude         + '\n' +
 					 'Altitude: '          + position.coords.altitude          + '\n' +
 					 'Accuracy: '          + position.coords.accuracy          + '\n' +
@@ -98,9 +99,9 @@
 					 'Heading: '           + position.coords.heading           + '\n' +
 					 'Speed: '             + position.coords.speed             + '\n' +
 					 'Timestamp: '         + position.timestamp                + '\n');
-					*/
+					
 					 //alert('baal'+ position.coords.latitude +'\n');
-			document.getElementById('container-frame').src = 'http://ready.vrisini.com/music/?lat='+ latitude + '&lon=' + longitude +;
+			//document.getElementById('container-frame').src = 'http://ready.vrisini.com/music/?lat='+ latitude + '&lon=' + longitude +;
 					
 			   };
 			   
@@ -116,7 +117,7 @@
 				getPosition();
 				
 				//document.getElementById('blanker').style.display = 'block';
-				//alert('hi');	
+				alert('hi');	
 				document.getElementById("getPosition").addEventListener("click", getPosition);
 				document.getElementById("watchPosition").addEventListener("click", watchPosition);	
 			
