@@ -53,7 +53,7 @@
         <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
         <script type="text/javascript" src="js/materialize.min.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
-		
+		<script src="phonegap.js"></script>
 		<script type="text/javascript">
 			var flag = true;
 		// Initializing global variables
@@ -66,7 +66,7 @@
 		document.addEventListener("deviceready",onDeviceReady,false);
 				
 				
-			alert('h1');
+			//alert('h1');
 		
 		/*	function loaded(){
 				document.getElementById('blanker').style.display = 'none';	
@@ -91,7 +91,7 @@
 				
 			   var watchID = navigator.geolocation.getCurrentPosition(onSuccess, onError, options);
 			   function onSuccess(position) {
-				alert('Latitude: '          + position.coords.latitude          + '\n' +
+				  alert('Latitude: '          + position.coords.latitude          + '\n' +
 					 'Longitude: '         + position.coords.longitude         + '\n' +
 					 'Altitude: '          + position.coords.altitude          + '\n' +
 					 'Accuracy: '          + position.coords.accuracy          + '\n' +
@@ -99,14 +99,7 @@
 					 'Heading: '           + position.coords.heading           + '\n' +
 					 'Speed: '             + position.coords.speed             + '\n' +
 					 'Timestamp: '         + position.timestamp                + '\n');
-					
-					 alert('src = 'http://projects.vrisini.com/speeltuin/?lat='
-      + latitude + '&lon=' + longitude +');
-					 document.getElementById('container-frame').src = 'http://projects.vrisini.com/speeltuin/?lat='
-      + latitude + '&lon=' + longitude +;
-					
 			   };
-			   
 			   function onError(error) {
 				  alert('code: '    + error.code    + '\n' + 'message: ' + error.message + '\n');
 			   }
@@ -114,14 +107,13 @@
 					
 			  
 			function onDeviceReady()                    
-			{  		
-					alert('hi');	
+			{  
 				getPosition();
-				
+						
 				//document.getElementById('blanker').style.display = 'block';
 				//alert('hi');	
-				//document.getElementById("getPosition").addEventListener("click", getPosition);
-				//document.getElementById("watchPosition").addEventListener("click", watchPosition);	
+				document.getElementById("getPosition").addEventListener("click", getPosition);
+				document.getElementById("watchPosition").addEventListener("click", watchPosition);	
 			
 				
 				// Blanker on change				
