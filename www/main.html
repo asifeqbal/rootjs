@@ -29,6 +29,14 @@
 			#blanker{width:96px; height:96px; background:url('loader.gif') no-repeat center center; display:none; z-index:1000; position:absolute;}
 			#offline-screen{width:100%; background:url('connectionlost.png') no-repeat center center; image-size:contain; display:none; z-index:1000; position:absolute;}
 		</style>
+		<script>
+				function onDeviceReady () {
+				// alert("Calling onDeviceReady()");
+				}
+				setTimeout(function () {
+						document.addEventListener('deviceready', onDeviceReady, false);
+				}, 1000);
+		</script>
        </head>
     <body>
 	<div id="blanker"></div>	
