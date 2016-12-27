@@ -52,6 +52,24 @@
         <script type="text/javascript" src="js/index.js"></script>
 		<script src="phonegap.js"></script>
 		<script type="text/javascript">
+		function onDeviceReady()                    
+			{  	
+				alert('hello2');
+				// Blanker on change				
+				/*document.addEventListener("online", doWhenOnline, false);
+				document.addEventListener("offline", doWhenOffline, false);
+				var networkState = navigator.connection.type;
+				
+				if(networkState == Connection.NONE) {
+					doWhenOffline();
+				}
+				else{
+					doWhenOnline();
+				}*/ 
+				alert('hi');
+				getPosition();	
+				alert('hello');
+			}
 			var flag = true;
 			// Initializing global variables
 			var calcTop = ((document.body.clientHeight / 2) - 48);
