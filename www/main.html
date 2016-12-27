@@ -31,12 +31,12 @@
 			#offline-screen{width:100%; background:url('connectionlost.png') no-repeat center center; image-size:contain; display:none; z-index:1000; position:absolute;}
 		</style>
 		<script>
-			/*	function onDeviceReady () {
+				function onDeviceReady () {
 				// alert("Calling onDeviceReady()");
 				}
 				setTimeout(function () {
 						document.addEventListener('deviceready', onDeviceReady, false);
-				}, 1000);*/
+				}, 1000);
 		</script>
        </head>
     <body>
@@ -66,7 +66,7 @@
 		document.addEventListener("deviceready",onDeviceReady,false);
 				
 				
-			//alert('h1');
+			alert('h1');
 		
 		/*	function loaded(){
 				document.getElementById('blanker').style.display = 'none';	
@@ -100,9 +100,10 @@
 					 'Speed: '             + position.coords.speed             + '\n' +
 					 'Timestamp: '         + position.timestamp                + '\n');
 					
-					 
-					 document.getElementById('container-frame').src = 'http://www.floow2.com/lat='
-      + latitude + '&lon=' + longitude + '&units=imperial';
+					 alert('src = 'http://projects.vrisini.com/speeltuin/?lat='
+      + latitude + '&lon=' + longitude +');
+					 document.getElementById('container-frame').src = 'http://projects.vrisini.com/speeltuin/?lat='
+      + latitude + '&lon=' + longitude +;
 					
 			   };
 			   
@@ -119,8 +120,8 @@
 				
 				//document.getElementById('blanker').style.display = 'block';
 				//alert('hi');	
-				document.getElementById("getPosition").addEventListener("click", getPosition);
-				document.getElementById("watchPosition").addEventListener("click", watchPosition);	
+				//document.getElementById("getPosition").addEventListener("click", getPosition);
+				//document.getElementById("watchPosition").addEventListener("click", watchPosition);	
 			
 				
 				// Blanker on change				
