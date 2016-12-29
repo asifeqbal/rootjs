@@ -24,7 +24,8 @@
 	<plugin name="cordova-plugin-keyboard" spec="~1.1.4" />
 	
 	<preference name="LoadUrlTimeoutValue" value="20000"/>
-	<preference name="KeyboardShrinksView" value="true" /> 
+	<preference name="KeyboardShrinksView" value="true" />
+	<preference name="HideKeyboardFormAccessoryBar" value="false"/>	
 	<preference name="permissions" value="none" />
 	<preference name="DisallowOverscroll" value="true"/> 
 	<preference name="fullscreen" value="true" />
