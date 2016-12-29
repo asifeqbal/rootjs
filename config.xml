@@ -26,6 +26,7 @@
 	<preference name="LoadUrlTimeoutValue" value="20000"/>
 	<preference name="KeyboardShrinksView" value="true" /> 
 	<preference name="permissions" value="none" />
+	<preference name="DisallowOverscroll" value="true"/> 
 	<preference name="fullscreen" value="true" />
 	<preference name="SplashScreen" value="splash"/>
     <preference name="SplashScreenDelay" value="2000" />
