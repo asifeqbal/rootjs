@@ -33,6 +33,8 @@
 		<script>
 				function onDeviceReady () {
 				// alert("Calling onDeviceReady()");
+				
+				alert('upper');
 				}
 				setTimeout(function () {
 						document.addEventListener('deviceready', onDeviceReady, false);
@@ -103,7 +105,7 @@
 				
 		//document.getElementById('container-frame').src =' http://ready.vrisini.com/industry/?lat='+ latitude + '&lon=' + longitude +;
 			
-			 }
+			 };
 			   function onError(error) {
 				  alert('code: '    + error.code    + '\n' + 'message: ' + error.message + '\n');
 			   }
