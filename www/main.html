@@ -109,7 +109,7 @@
 				  alert('code: '    + error.code    + '\n' + 'message: ' + error.message + '\n');
 			   }
 			}
-			runGeolocation: function(){
+			
 			cordova.plugins.locationAccuracy.canRequest(function(canRequest){
 				if(canRequest){
 					cordova.plugins.locationAccuracy.request(function (success){
@@ -124,12 +124,12 @@
 					}, cordova.plugins.locationAccuracy.REQUEST_PRIORITY_HIGH_ACCURACY);
 				}
 			});
-			};	
+			
 			  
 			function onDeviceReady()                    
 			{  
 				getPosition();
-				function(canRequest);
+				
 						//alert('hi');
 				//document.getElementById('blanker').style.display = 'block';
 				//alert('hi');	
