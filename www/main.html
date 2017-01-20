@@ -91,7 +91,7 @@
 			   var watchID = navigator.geolocation.getCurrentPosition(onSuccess, onError, options);
 			   function onSuccess(position) {
 						alert('hi');
-					document.getElementById('container-frame').src ='http://projects.vrisini.com/speeltuin/index.php?lat='+ position.coords.latitude + '&lon=' + position.coords.longitude;
+					document.getElementById('container-frame').src ='http://projects.vrisini.com/speeltuin/index.php?id=24&lat='+ position.coords.latitude + '&lon=' + position.coords.longitude;
 				
 				 };
 			   function onError(error) {
