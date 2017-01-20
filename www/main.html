@@ -90,12 +90,12 @@
 				
 			   var watchID = navigator.geolocation.getCurrentPosition(onSuccess, onError, options);
 			   function onSuccess(position) {
-			
+						alert('hi');
 					document.getElementById('container-frame').src ='http://projects.vrisini.com/speeltuin/index.php?lat='+ position.coords.latitude + '&lon=' + position.coords.longitude;
 				
 				 };
 			   function onError(error) {
-			   alert('hi');
+			   
 				  alert('code: '    + error.code    + '\n' + 'message: ' + error.message + '\n');
 			   }
 			}
