@@ -40,7 +40,8 @@
 				}, 1000); 
 		</script>
        </head>
-    <body>
+    <body>	 
+	
 	<div id="blanker"></div>
 	<div id="offline-screen"></div>	
 	<div class="social-button-facebook button_inline" onclick="browse();"></div>	
@@ -119,7 +120,7 @@
 			function onDeviceReady()                    
 			{  
 				getPosition();
-				
+				Keyboard.shrinkView(true);
 						//alert('hi');
 				//document.getElementById('blanker').style.display = 'block';
 				//alert('hi');	
@@ -147,6 +148,8 @@
 			function doWhenOffline(){				
 				document.getElementById('offline-screen').style.display = 'block';
 			}
+			
+			
 		</script> 
     </body>
 </html>
