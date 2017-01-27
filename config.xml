@@ -47,8 +47,8 @@
     <preference name="disable-cursor" value="false" />
     <preference name="android-minSdkVersion" value="7" />
     <preference name="android-installLocation" value="auto" />
-	<param name="APP_ID" value="..." />
-    <param name="APP_NAME" value="..." />
+	<param name="APP_ID" value="357497484602149" />
+    <param name="APP_NAME" value="Roootsj" />
 	
     <access origin="*" />
 	<access origin="https://www.facebook.com" />
