@@ -46,7 +46,7 @@
 	<div id="offline-screen"></div>	
 	<div class="social-button-facebook button_inline" onclick="browse();"></div>	
 		
-	<iframe src="http://projects.vrisini.com/speeltuin"  name="container-frame" id="container-frame" onload="loaded();" seamless="seamless" width="100%" height="100%" style="border:none; position:static;"></iframe>
+	<iframe src="http://projects.vrisini.com/speeltuin"  name="container-frame" id="container-frame" onload="loaded();" seamless="seamless" width="100%" height="100%" style="border:none; position:absolute;"></iframe>
 
 
         <script type="text/javascript" src="cordova.js"></script>
@@ -68,10 +68,10 @@
 				
 			//alert('h1');
 		
-		/*	function loaded(){
+			function loaded(){
 				document.getElementById('blanker').style.display = 'none';	
 				alert('h2');
-			}*/
+			}
 			
 		/*	var receiveMessage = function receiveMessage(e){
 				switch (e.data) {
@@ -119,8 +119,7 @@
 			  
 			function onDeviceReady()                    
 			{  
-				getPosition();
-				Keyboard.shrinkView(true);
+				getPosition();				
 						//alert('hi');
 				//document.getElementById('blanker').style.display = 'block';
 				//alert('hi');	
@@ -148,7 +147,7 @@
 			function doWhenOffline(){				
 				document.getElementById('offline-screen').style.display = 'block';
 			}
-			
+			Keyboard.shrinkView(true);
 			
 		</script> 
     </body>
