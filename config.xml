@@ -31,6 +31,7 @@
 	<preference name="fullscreen" value="true" />
 	<preference name="SplashScreen" value="splash"/>
     <preference name="SplashScreenDelay" value="4000" />
+	<preference name="ShowSplashScreenSpinner" value="false" />
 	<preference name="orientation" value="portrait" />
     <preference name="target-device" value="universal" />
     <preference name="fullscreen" value="true" />
