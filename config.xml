@@ -51,19 +51,19 @@
 	<access origin="https://www.facebook.com" />
 	
 	<icon src="icon.png" />
-    <icon density="ldpi" platform="android" src="res/icon/android/icon-36-ldpi.gif" />
-    <icon density="mdpi" platform="android" src="res/icon/android/icon-48-mdpi.gif" />
-    <icon density="hdpi" platform="android" src="res/icon/android/icon-72-hdpi.gif" />
-    <icon density="xhdpi" platform="android" src="res/icon/android/icon-96-xhdpi.gif" />
+    <icon density="ldpi" platform="android" src="res/icon/android/icon-36-ldpi.png" />
+    <icon density="mdpi" platform="android" src="res/icon/android/icon-48-mdpi.png" />
+    <icon density="hdpi" platform="android" src="res/icon/android/icon-72-hdpi.png" />
+    <icon density="xhdpi" platform="android" src="res/icon/android/icon-96-xhdpi.png" />
 	<icon platform="ios" height="57" src="res/icon/ios/icon-57.png" width="57" />
     <icon platform="ios" height="72" src="res/icon/ios/icon-72.png" width="72" />
     <icon platform="ios" height="114" src="res/icon/ios/icon-57-2x.png" width="114" />
     <icon platform="ios" height="144" src="res/icon/ios/icon-72-2x.png" width="144" />
 	
-	<splash density="ldpi" platform="android" src="res/screen/android/screen-ldpi-portrait.png" />
-    <splash density="mdpi" platform="android" src="res/screen/android/screen-mdpi-portrait.png" />
-    <splash density="hdpi" platform="android" src="res/screen/android/screen-hdpi-portrait.png" />
-    <splash density="xhdpi" platform="android" src="res/screen/android/screen-xhdpi-portrait.png" />
+	<splash density="ldpi" platform="android" src="res/screen/android/screen-ldpi-portrait.gif" />
+    <splash density="mdpi" platform="android" src="res/screen/android/screen-mdpi-portrait.gif" />
+    <splash density="hdpi" platform="android" src="res/screen/android/screen-hdpi-portrait.gif" />
+    <splash density="xhdpi" platform="android" src="res/screen/android/screen-xhdpi-portrait.gif" />
 	
 	
 	<splash platform="ios" height="480" src="res/screen/ios/screen-iphone-portrait.png" width="320" />
