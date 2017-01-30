@@ -48,6 +48,7 @@
     <preference name="android-installLocation" value="auto" />
 	
     <access origin="*" />
+	<access origin="http://www.facebook.com" />
 	<access origin="https://www.facebook.com" />
 	
 	<icon src="icon.png" />
