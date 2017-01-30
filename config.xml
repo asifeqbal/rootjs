@@ -21,8 +21,7 @@
 	<plugin name="cordova-plugin-globalization" spec="~1.0.5" />
 	<plugin name="cordova-plugin-background-fetch" spec="4.0.0" />
 	<plugin name="cordova-plugin-geolocation" spec="~2.4.1" />
-	<plugin name="cordova-plugin-keyboard" spec="~1.1.4" />
-	<plugin name="com.phonegap.plugins.facebookconnect" spec="0.9.0" source="pgb"/>
+	<plugin name="cordova-plugin-keyboard" spec="~1.1.4" />	
 	
 	
 	<preference name="LoadUrlTimeoutValue" value="20000"/>
@@ -47,8 +46,6 @@
     <preference name="disable-cursor" value="false" />
     <preference name="android-minSdkVersion" value="7" />
     <preference name="android-installLocation" value="auto" />
-	<param name="APP_ID" value="357497484602149" />
-    <param name="APP_NAME" value="Roootsj" />
 	
     <access origin="*" />
 	<access origin="https://www.facebook.com" />
