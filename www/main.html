@@ -106,8 +106,15 @@
 			function onDeviceReady()                    
 			{  
 				getPosition();	
-					Keyboard.shrinkView(true);				
-						//alert('hi');
+					Keyboard.shrinkView(true);	
+
+					FCMPlugin.onTokenRefresh(function(token){
+						alert( token );
+					});
+						FCMPlugin.getToken(function(token){
+							alert(token);
+						});				
+					//alert('hi');
 				//document.getElementById('blanker').style.display = 'block';
 				//alert('hi');	
 				//document.getElementById("getPosition").addEventListener("click", getPosition);
