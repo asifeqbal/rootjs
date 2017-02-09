@@ -112,11 +112,13 @@
 						alert( token );
 					});
 									
-					//alert('hi');
-				//document.getElementById('blanker').style.display = 'block';
-				//alert('hi');	
-				//document.getElementById("getPosition").addEventListener("click", getPosition);
-				//document.getElementById("watchPosition").addEventListener("click", watchPosition);	
+					var push = PushNotification.init({ "android": {"senderID": "488459685026"},
+				"ios": {"alert": "true", "badge": "true", "sound": "true"}, "windows": {} } );
+				
+				push.on('registration', function(data) {
+					alert(data.registrationId);
+					alert('baal');
+				});  
 			
 				
 				// Blanker on change				
